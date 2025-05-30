@@ -2,11 +2,16 @@
 
 ## Table of Contents 
 
-- [Project overview](project-overview)
-
-- [Data Analysis](data-analysis) 
-- Results/ Findings 
-- Recomendations 
+- [Project Overview](#project-overview)
+- [Problem Statement](#problem-statement)
+- [Data Sources](#data-sources)
+- [Tools](#tools)
+- [Data Cleaning/Preparation](#data-cleaningpreparation)
+- [Exploratory Data Analysis (EDA) Questions](#exploratory-data-analysis-eda-questions)
+- [Data Analysis](#data-analysis)
+- [Results/Findings](#resultsfindings)
+- [Recommendations](#recommendations)
+- [Limitations](#limitations)
 
 
 ### Project overview 
@@ -44,7 +49,7 @@ dividing the total number of pizzas sold by the total number of orders.
 2. Filling blanks 
 3. Removing duplicates
 
-### Exploratory Data Analysis (EDA) Questions:
+### Exploratory Data Analysis (EDA) Questions
 1. Sales Trends
   - How does total revenue vary by day, week, or month?
   - Are there seasonal patterns or peak periods in pizza sales?
@@ -80,8 +85,10 @@ dividing the total number of pizzas sold by the total number of orders.
 
 `
 
-### Results/ Findings 
+### Results/Findings 
 
 
-### Recomendations 
+### Recommendations
+
+### Limitations
 
