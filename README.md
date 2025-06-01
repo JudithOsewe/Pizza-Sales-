@@ -1,7 +1,7 @@
 # Pizza Sales Analysis
-
+-----------
 ## Table of Contents 
-
+-------
 - [Project Overview](#project-overview)
 - [Problem Statement](#problem-statement)
 - [Data Sources](#data-sources)
@@ -13,15 +13,17 @@
 - [Recommendations](#recommendations)
 - [Limitations](#limitations)
 
+---------
 
 ### Project overview 
-
+-----
 This project involves analyzing pizza sales data to uncover insights that can guide business decisions and performance evaluation. The goal is to build an interactive dashboard that highlights key performance indicators (KPIs) such as revenue, order value, and sales volume. The analysis focuses on identifying sales trends, customer behavior, and operational metrics to support data-driven strategy in the food service business.
 
 
 ### Problem Statement 
-
+------
   #### KPI's Requirement 
+-----
 
 We need to analyze key indicators for our pizza sales data to gain insights into our business
 performance. Specifically, we want to calculate the following metrics:
@@ -33,19 +35,20 @@ performance. Specifically, we want to calculate the following metrics:
 5. Average Pizzas Per Order: The average number of pizzas sold per order, calculated by dividing the total number of pizzas sold by the total number of orders.
 
 ### Data Sources 
-
+-------
 ### Tools 
+-------
  - Excel for data cleaning
  - Microsoft SQL for data analysis 
  - Power BI - visualization 
 
-
+-----
 ### Data Cleaning/Preparation 
-
+-----
 1. Data inspection
 2. Standardizing formats on the pizza column size replace L with Large, M for Medium an S for Rgular and XLarge to X Large
 3. Removing duplicates
-
+-----
 ### Exploratory Data Analysis (EDA) Questions
 1. Sales Trends
   - How does total revenue vary by day, week, or month?
@@ -78,9 +81,12 @@ performance. Specifically, we want to calculate the following metrics:
   - Are there differences in performance across different locations (if applicable)?
   - Are there bottlenecks or outliers in the order processing or delivery data?
 
+
+-----
+
 ### Data Analysis 
-  ### KPI's
-  
+
+-----  
 Total Revenue
 
 `SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales;`
@@ -142,10 +148,70 @@ Top selling Pizza by numbers
 GROUP BY pizza_name
 ORDER BY Total_quantity DESC`
 
-## Results/Findings 
+----
+## **Results/Findings** 
+-----
+1. 📅 Sales Trends
+Peak Days: Orders are highest on Fridays and Saturdays, particularly in the evenings.
+Peak Months: July and January recorded the highest number of orders, suggesting seasonal demand spikes.
+
+2. 🍕 Product Performance
+Top Category: The Classic category contributes the most to both revenue and total orders.
+Top Size: Large pizzas generate the highest sales, indicating a strong customer preference.
+Top Pizza by Revenue: Thai Chicken pizza leads in revenue generation.
+Top Pizza by Quantity & Orders: Classic Deluxe is the most frequently ordered and sold pizza.
+
+3. 📉 Underperforming Product
+Brie Carre pizza contributes the least in terms of revenue, quantity sold, and total orders.
 
 
+
+------
 ### Recommendations
+---
+Based on the findings, the following actions are recommended to improve business performance:
+
+1. 📈 Boost High-Performing Products
+Promote Classic Deluxe and Thai Chicken pizzas through featured menu spots or combo deals.
+Consider upselling Large pizzas with bundled offers to increase average order value.
+
+2. 📉 Address Underperforming Items
+Reevaluate the Brie Carre pizza: assess its pricing, ingredients, and customer appeal.
+Consider promotional campaigns or recipe adjustments to improve its performance—or remove it if it continues to underperform.
+
+4. 🕒 Optimize Operations for Peak Times
+Increase staffing and inventory on Fridays, Saturdays, and during July and January to meet demand.
+Explore targeted promotions during off-peak days to balance order volume.
+
+5. 📊 Enhance Data Collection
+Incorporate customer demographics, time-of-day data, and location information to enable deeper insights.
+Track delivery times and customer feedback to improve service quality.
+----
 
 ### Limitations
+---
+Limitations
+Despite the valuable insights derived from the pizza sales data, several limitations should be acknowledged:
 
+1. Lack of Customer Demographics
+The dataset does not include customer-specific information such as age, gender, location, or preferences. This limits the ability to perform customer segmentation or targeted marketing analysis.
+
+2. No Time-of-Day Granularity
+While daily and monthly trends are analyzed, the absence of detailed timestamps (e.g., hour or minute) restricts insights into peak ordering hours or time-based promotions.
+
+3. No Location Data
+If the business operates multiple branches, the lack of location-specific data prevents performance comparisons across outlets or regions.
+
+4. No Delivery or Fulfillment Metrics
+Operational efficiency metrics such as delivery time, order preparation time, or customer satisfaction are not available, which limits the ability to assess service quality.
+
+5. Static Dataset
+The analysis is based on a snapshot of historical data. Without real-time or regularly updated data, the dashboard and insights may become outdated quickly.
+
+6. Limited Product Metadata
+There is no information on ingredient costs, preparation time, or profit margins, which could enhance profitability analysis and menu optimization.
+
+7. No Marketing Attribution
+The dataset lacks information on promotions, discounts, or marketing campaigns, making it difficult to assess the impact of marketing efforts on sales performance.
+
+---------
